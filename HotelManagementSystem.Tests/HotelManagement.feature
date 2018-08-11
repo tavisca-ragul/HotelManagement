@@ -24,9 +24,9 @@ Scenario Outline: User gets hotel from database by providing valid id
     Then Hotel with name '<name>' which got by id should be present in the response
 Examples: 
 | description | id | name        |
-| Get_id_1    | 1  | Nala        |
-| Get_id_2    | 2  | Le-Meridian |
-| Get_id_3    | 3  | Hyatt       |
+| Get_id_1    | 4  | Nala        |
+| Get_id_2    | 5  | Le-Meridian |
+| Get_id_3    | 6  | Hyatt       |
 
 @GetAllHotels
 Scenario Outline: User gets list of all the hotels added
@@ -42,7 +42,7 @@ Scenario Outline: User gets list of all the hotels added
 	When User calls GetAllHotels api
 	Then Hotel with names '<name1>,<name2>,<name3>' should be present in the response
 Examples: 
-| description                             | id1 | name1       | id2 | name2       | id3 | name3  |
-| Get_hotels_nala_Anjali_Hemala           | 1   | Nala        | 2   | Anjali      | 3   | Hemala |
-| Get_hotels_Blackpearl_Le-Meridian_ IBIS | 1   | Blackpearl  | 2   | Le-Meridian | 3   | IBIS   |
-| Get_hotels_GreenTower_Residency_Hyatt   | 1   | Green Tower | 2   | Residency   | 3   | Hyatt  |
+| description                             | id1  | name1       | id2  | name2       | id3  | name3  |
+| Get_hotels_nala_Anjali_Hemala           | 7    | Nala        | 8    | Anjali      | 9    | Hemala |
+| Get_hotels_Blackpearl_Le-Meridian_ IBIS | 10   | Blackpearl  | 11   | Le-Meridian | 12   | IBIS   |
+| Get_hotels_GreenTower_Residency_Hyatt   | 13   | Green Tower | 14   | Residency   | 15   | Hyatt  |
